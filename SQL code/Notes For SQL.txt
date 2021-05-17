@@ -1,0 +1,44 @@
+VSCODE tips and tricks
+
+Select NAME
+from sys.databases
+
+allows for viewing all current databases.
+
+
+Create database (insertName) allows for the creation of your new database. This does not need to be repeated. Once set up it is ready to be used.
+
+Once the database instance is created the 
+USE (database name) will bring you into that database to be manipulated with data and allow for tables to be created.
+It only needs to be put in once, it doesn't need to be inputed each time you try to use that database. Very helpful.
+
+
+
+All essential commands:
+1. Shows all current databases in space.
+	Select NAME
+	from sys.databases
+
+2. This creates a new data base on my server.
+	Create database (insertName)
+	  -lachlans_space
+
+3. This is allows you to enter a created DataBase to 
+	Use (database name)
+	Use lachlans_space 
+
+4. This shows all the tables in your database (like entering a folder) to manipulate actually use and enter code
+   	-select table_name from information_schema.tables;
+	
+
+
+
+
+
+
+exec sp_columns project;
+	select * from project;
+	exec sp_columns worker;
+	select * from worker;
+
+Shows everything in the database space.
